@@ -3,15 +3,16 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta charset="utf-8" /> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <title>Expert AD</title>
-    <meta name="description" content="" />
+    <!-- <meta name="description" content="" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,7 +20,8 @@
         <!-- navigation start -->
         <nav>
             <a href="/home.html"><img src="img/logo.png" alt="Expert AD" /></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -27,17 +29,30 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
         <!-- navigation end -->
         <!-- covertext -->
         <div class="text-box">
             <h1>EXPERT AD</h1>
-            <p>There is nothing like Best bur<br />Can be Better.</p>
+            <p>There is nothing like Best but<br />Can be Better.</p>
             <a href="" class="hero-btn">Explore More</a>
         </div>
     </section>
 
-    <!-- <script src="" async defer></script> -->
+
+    <!-- javascript -->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right= "0";
+        }
+        
+        function hidemenu(){
+            navLinks.style.right= "-200px";
+        }
+
+    </script>
 </body>
 
 </html>
