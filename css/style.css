@@ -177,3 +177,14 @@ h3{
     padding-top: 50px;
 
 }
+.insta-post{
+   flex-basis: 32%;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   position: relative;
+   overflow: hidden;
+}
+.insta-post img{
+    width: 100%;
+    height: 100%;
+}
