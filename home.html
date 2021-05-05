@@ -12,9 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
-        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/3e285164d7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -49,25 +47,33 @@
         <div class="row">
             <div class="blog-col">
                 <h3>Hacking</h3>
-                <p>Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the hackng
-                    related blogs I've posted.</p>
-
+                <p>
+                    Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the hackng related blogs I've posted.
+                </p>
             </div>
             <div class="blog-col">
                 <h3>Networking</h3>
-                <p>Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the
-                    Networking related blogs I think you will require.</p>
-
+                <p>
+                    Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the Networking related blogs I think you will require.
+                </p>
             </div>
             <div class="blog-col">
                 <h3>Bug-Bounty & CTF</h3>
-                <p>Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the
-                    Bug-Bounty and CTF related blogs I've posted.</p>
-
+                <p>
+                    Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the Bug-Bounty and CTF related blogs I've posted.
+                </p>
             </div>
         </div>
     </section>
-   
+    <!-- blogpost -->
+    <!-- instagram -->
+    <section class="insta">
+        <h1>Instagram</h1>
+        <p>Do Follow and Like</p>
+        <div class="insta-post">
+            <ul id="instafeed" class="instafeed"></ul>
+        </div>
+    </section>
 
     <!-- javascript for menu -->
     <script>
@@ -79,9 +85,41 @@
         function hidemenu() {
             navLinks.style.right = "-200px";
         }
-
     </script>
-    
+    <!-- Instafeed -->
+    <script>
+        var token = "IGQVJWNGw4RzhPZAkZApSzhtd0pNbTNKUUJTMndnTzZAYUDh1bVdIWFdSQ25IVUdKOURpN0RVWWxSSUVRZAlJDM0ZAWY0hyYkJOam45SmhjNm1rdURLTDVsczV3dklqTFRlbzQxUTJ2MVFkcmNScWVjOE82WgZDZD", // learn how to obtain it below
+        username = 'expertad630', // rudrastyh - my username :)
+        num_photos = 4;
+ 
+        $.ajax({ // the first ajax request returns the ID of user rudrastyh
+        	url: 'https://api.instagram.com/v1/users/search',
+        	dataType: 'jsonp',
+        	type: 'GET',
+        	data: {access_token: token, q: username}, // actually it is just the search by username
+        	success: function(data){
+        		console.log(data);
+        		$.ajax({
+        			url: 'https://api.instagram.com/v1/users/' + data.data[0].id + '/media/recent', // specify the ID of the first found user
+        			dataType: 'jsonp',
+        			type: 'GET',
+        			data: {access_token: token, count: num_photos},
+        			success: function(data2){
+        				console.log(data2);
+        				for(x in data2.data){
+        					$('ul').append('<li><img src="'+data2.data[x].images.thumbnail.url+'"></li>');  
+        				}
+            			},
+        			error: function(data2){
+        				console.log(data2);
+        			}
+        		});
+        	},
+        	error: function(data){
+        		console.log(data);
+        	}
+        });
+    </script>
 </body>
 
 </html>
