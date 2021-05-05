@@ -71,7 +71,7 @@
         <h1>Instagram</h1>
         <p>Do Follow and Like</p>
         <div class="insta-post">
-            <ul id="InstaFeed" class="instafeed"></ul>
+            <div id="instafeed"></div>
         </div>
     </section>
 
@@ -87,30 +87,23 @@
         }
     </script>
     <!-- Instafeed -->
-    <!-- <script src="instafeed.min.js"></script> -->
-    <script>       
-       // var token = 'IGQVJWNGw4RzhPZAkZApSzhtd0pNbTNKUUJTMndnTzZAYUDh1bVdIWFdSQ25IVUdKOURpN0RVWWxSSUVRZAlJDM0ZAWY0hyYkJOam45SmhjNm1rdURLTDVsczV3dklqTFRlbzQxUTJ2MVFkcmNScWVjOE82WgZDZD', // learn how to obtain it below
-        // num_photos = 10;
- 
-        // $.ajax({
-        // 	url: 'https://api.instagram.com/v1/users/self/media/recent',
-        // 	dataType: 'jsonp',
-        // 	type: 'GET',
-        // 	data: {access_token: token, count: num_photos},
-        // 	success: function(data){
-        //  		console.log(data);
-        // 		for( x in data.data ){
-        // 			$('ul').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>');
-        // 		}
-        // 	},
-        // 	error: function(data){
-        // 		console.log(data);
-        // 	}
-        // });
+    <script src="js/instafeed.min.js"></script>
+    <script type="text/javascript">       
+    //    var token = 'IGQVJWNGw4RzhPZAkZApSzhtd0pNbTNKUUJTMndnTzZAYUDh1bVdIWFdSQ25IVUdKOURpN0RVWWxSSUVRZAlJDM0ZAWY0hyYkJOam45SmhjNm1rdURLTDVsczV3dklqTFRlbzQxUTJ2MVFkcmNScWVjOE82WgZDZD', // learn how to obtain it below
+        var feed = new Instafeed({
+            get:'user',
+            accessToken: 'IGQVJWNGw4RzhPZAkZApSzhtd0pNbTNKUUJTMndnTzZAYUDh1bVdIWFdSQ25IVUdKOURpN0RVWWxSSUVRZAlJDM0ZAWY0hyYkJOam45SmhjNm1rdURLTDVsczV3dklqTFRlbzQxUTJ2MVFkcmNScWVjOE82WgZDZD',
+            userId:'2987620390',
+            limit:4,
+            target:'instafeed',
+        });
+        feed.run();
+</script>
 
    
 
     </script>
 </body>
+<script src="js/instagramfeed.js"></script>
 
 </html>
