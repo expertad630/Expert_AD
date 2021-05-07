@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Expert AD</title>
@@ -10,202 +9,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/3e285164d7.js" crossorigin="anonymous"></script>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3e285164d7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
-
+  <body>
     <section class="header">
-
-        <!-- navigation start -->
-        <nav>
-            <a href="/home.html"><img src="img/logo.png" alt="Expert AD" /></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" onclick="hidemenu()"></i>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-            <i class="fas fa-bars" onclick="showmenu()"></i>
-        </nav>
-        <!-- navigation end -->
-
-
-        <!-- covertext -->
-        <div class="text-box">
-            <h1>EXPERT AD</h1>
-            <p>There is nothing like Best but<br />Can be Better.</p>
-            <a href="" class="hero-btn">Explore More</a>
+      <!-- navigation start -->
+      <nav>
+        <a href="/home.html"><img src="img/logo.png" alt="Expert AD" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" id="hide" onclick="menu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
         </div>
-    </section>
+        <i class="fas fa-bars" id="show" onclick="menu()"></i>
+      </nav>
+      <!-- navigation end -->
 
+      <!-- covertext -->
+      <div class="text-box">
+        <h1>EXPERT AD</h1>
+        <p>There is nothing like Best but<br />Can be Better.</p>
+        <a href="" class="hero-btn">Explore More</a>
+      </div>
+    </section>
 
     <!-- blogpost -->
     <section class="blogPost">
-        <h1>Blog Post</h1>
-        <p>All the blogposts are avalable in Blog Section</p>
-        <div class="row">
-            <div class="blog-col">
-                <h3>Hacking</h3>
-                <p>
-                    Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the hackng related blogs I've posted.
-                </p>
-            </div>
-            <div class="blog-col">
-                <h3>Networking</h3>
-                <p>
-                    Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the Networking related blogs I think you will require.
-                </p>
-            </div>
-            <div class="blog-col">
-                <h3>Bug-Bounty & CTF</h3>
-                <p>
-                    Hello my fellow Hackers, Welcome to Expert AD. In this section of blogs you will find all the Bug-Bounty and CTF related blogs I've posted.
-                </p>
-            </div>
+      <h1>Blog Post</h1>
+      <p>All the blogposts are avalable in Blog Section</p>
+      <div class="row">
+        <div class="blog-col">
+          <h3>Hacking</h3>
+          <p>
+            Hello my fellow Hackers, Welcome to Expert AD. In this section of
+            blogs you will find all the hackng related blogs I've posted.
+          </p>
         </div>
+        <div class="blog-col">
+          <h3>Networking</h3>
+          <p>
+            Hello my fellow Hackers, Welcome to Expert AD. In this section of
+            blogs you will find all the Networking related blogs I think you
+            will require.
+          </p>
+        </div>
+        <div class="blog-col">
+          <h3>Bug-Bounty & CTF</h3>
+          <p>
+            Hello my fellow Hackers, Welcome to Expert AD. In this section of
+            blogs you will find all the Bug-Bounty and CTF related blogs I've
+            posted.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- blogpost -->
 
-
     <!-- instagram -->
     <section class="insta">
-        <h1>Instagram</h1>
-        <p>Do Follow and Like</p>
-        <div class="insta-post">
-            <div class="row" id="instafeed">
-            </div>
-        </div>
-<a href="" class="insta-btn">For More</a>
+      <h1>Instagram</h1>
+      <p>Do Follow and Like</p>
+      <div class="insta-post">
+        <div class="row" id="instafeed"></div>
+      </div>
+      <a href="" class="insta-btn">For More</a>
     </section>
     <!-- instagram End -->
 
-
     <!-- about section -->
     <section class="skills">
-        <h1>My Skills</h1>
-        <p>The trending skills I've gained recently</p>
-        <div class="row">
-            <div class="skills-col">
-                <img src="img/programming.jpg" alt="">
-                <h3>Prgoramming Language</h3>
-                <p>I've skilled in Python, Java and some others programming langugees</p>
-            </div>
-            <div class="skills-col">
-                <img src="img/web.jpg" alt="">
-                <h3>Web Designing</h3>
-                <p>I've skilled in Django, HTML, CSS, and JavaScript which make me a skilled front end designer</p>
-            </div>
-            <div class="skills-col">
-                <img src="img/hacking.png" alt="">
-                <h3>Ethical Hacking and Pen-Testing</h3>
-                <p>I've gained little bit of knowledge in Ethical Hacking and cyber Security and I also make content about this on Youtube</p>
-            </div>
+      <h1>My Skills</h1>
+      <p>The trending skills I've gained recently</p>
+      <div class="row">
+        <div class="skills-col">
+          <img src="img/programming.jpg" alt="" />
+          <h3>Prgoramming Language</h3>
+          <p>
+            I've skilled in Python, Java and some others programming langugees
+          </p>
         </div>
-
+        <div class="skills-col">
+          <img src="img/web.jpg" alt="" />
+          <h3>Web Designing</h3>
+          <p>
+            I've skilled in Django, HTML, CSS, and JavaScript which make me a
+            skilled front end designer
+          </p>
+        </div>
+        <div class="skills-col">
+          <img src="img/hacking.png" alt="" />
+          <h3>Ethical Hacking and Pen-Testing</h3>
+          <p>
+            I've gained little bit of knowledge in Ethical Hacking and cyber
+            Security and I also make content about this on Youtube
+          </p>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- feedback -->
     <section class="feedback">
-        <h1>User Feedback</h1>
-        <p>Here are some of the happy user's feedbacks</p>
-        <div class="row">
-            <div class="feedback-col">
-                <img src="img/rahul.jpg" alt="">
-                <div>
-                    <h3>Resonet_ARK</h3>
-                    <p>Thank You Expert AD for this awsome Website. I highly recomend everyone give this man a try and you will not regrate.</p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-            </div>
-            <div class="feedback-col">
-                <img src="img/n45ht.jfif" alt="">
-                <div>
-                    <h3>N45HT-Official</h3>
-                    <p>Thank You Expert AD for hunting that critical bug on our server, if it's not get fixed till that time we have to face some serious consiquences.</p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-            </div>
+      <h1>User Feedback</h1>
+      <p>Here are some of the happy user's feedbacks</p>
+      <div class="row">
+        <div class="feedback-col">
+          <img src="img/rahul.jpg" alt="" />
+          <div>
+            <h3>Resonet_ARK</h3>
+            <p>
+              Thank You Expert AD for this awsome Website. I highly recomend
+              everyone give this man a try and you will not regrate.
+            </p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
         </div>
-
+        <div class="feedback-col">
+          <img src="img/n45ht.jfif" alt="" />
+          <div>
+            <h3>N45HT-Official</h3>
+            <p>
+              Thank You Expert AD for hunting that critical bug on our server,
+              if it's not get fixed till that time we have to face some serious
+              consiquences.
+            </p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+      </div>
     </section>
-
 
     <!-- CONTACT -->
     <section class="contact">
-        <h1>Feel Free To Contact Me</h1>
-        <p>If You Are A Hacker Or Designer Dont Use This Option to contact me as it may not reach me directly </p>
-        <a href="" class="hero-btn">Contact Me</a>
+      <h1>Feel Free To Contact Me</h1>
+      <p>
+        If You Are A Hacker Or Designer Dont Use This Option to contact me as it
+        may not reach me directly
+      </p>
+      <a href="" class="hero-btn">Contact Me</a>
     </section>
 
-
-
-     <!-- footer -->
+    <!-- footer -->
     <section class="footer">
-        <h4>Follow Me</h4>
-        <p>You can follow me on my social media</p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-github"></i>
-            <i class="fa fa-youtube"></i>
-        </div>
-        <p>2021 <i class="fa fa-copyright"></i> by expertad630</p>
+      <h4>Follow Me</h4>
+      <p>You can follow me on my social media</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-github"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+      <p>2021 <i class="fa fa-copyright"></i> by expertad630</p>
     </section>
-
-
 
     <!-- all the inner scripting  -->
 
-
     <!-- javascript for menu -->
     <script>
-        var navLinks = document.getElementById("navLinks");
-        function showmenu() {
-            navLinks.style.right = "0";
+      function menu() {
+        var x = document.getElementById("navLinks");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
         }
+      }
 
-        function hidemenu() {
-            navLinks.style.right = "-200px";
-        }
+      // var navLinks = document.getElementById("navLinks");
+
+      // function showmenu() {
+      //     navLinks.style.display = "block";
+      // }
+
+      // function hidemenu() {
+      //     navLinks.style.display = "none";
+      // }
     </script>
-
-
+    <!-- javascript fr menu alternative -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $("#navLinks").hide();
+          });
+          $("#show").click(function(){
+            $("#navLinks").show();
+          });
+        });
+        </script> -->
 
     <!-- Instafeed -->
     <script src="js/instafeed.min.js"></script>
-    <script type="text/javascript">       
-    //    var token = 'IGQVJWNGw4RzhPZAkZApSzhtd0pNbTNKUUJTMndnTzZAYUDh1bVdIWFdSQ25IVUdKOURpN0RVWWxSSUVRZAlJDM0ZAWY0hyYkJOam45SmhjNm1rdURLTDVsczV3dklqTFRlbzQxUTJ2MVFkcmNScWVjOE82WgZDZD', // learn how to obtain it below
-        var feed = new Instafeed({
-            get:'user',
-            accessToken: 'IGQVJWNGw4RzhPZAkZApSzhtd0pNbTNKUUJTMndnTzZAYUDh1bVdIWFdSQ25IVUdKOURpN0RVWWxSSUVRZAlJDM0ZAWY0hyYkJOam45SmhjNm1rdURLTDVsczV3dklqTFRlbzQxUTJ2MVFkcmNScWVjOE82WgZDZD',
-            userId:'2987620390',
-            limit:3,
-            target:'instafeed',
-        });
-        feed.run();
-
+    <script type="text/javascript">
+      //    var token = 'IGQVJWNGw4RzhPZAkZApSzhtd0pNbTNKUUJTMndnTzZAYUDh1bVdIWFdSQ25IVUdKOURpN0RVWWxSSUVRZAlJDM0ZAWY0hyYkJOam45SmhjNm1rdURLTDVsczV3dklqTFRlbzQxUTJ2MVFkcmNScWVjOE82WgZDZD', // learn how to obtain it below
+      var feed = new Instafeed({
+        get: "user",
+        accessToken:
+          "IGQVJWNGw4RzhPZAkZApSzhtd0pNbTNKUUJTMndnTzZAYUDh1bVdIWFdSQ25IVUdKOURpN0RVWWxSSUVRZAlJDM0ZAWY0hyYkJOam45SmhjNm1rdURLTDVsczV3dklqTFRlbzQxUTJ2MVFkcmNScWVjOE82WgZDZD",
+        userId: "2987620390",
+        limit: 3,
+        target: "instafeed",
+      });
+      feed.run();
     </script>
-
-
-</body>
-
+  </body>
 </html>

@@ -99,15 +99,16 @@ nav .fas{
 
     }
     .nav-links{
+        display: none;
         position: absolute;
         background: #f44336;
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: 0px;
         text-align: left;
         z-index: 2;
-        transition: 1s;
+        transition: all 2s linear;
     }
     nav .fas{
         display: block;
