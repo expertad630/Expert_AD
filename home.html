@@ -29,17 +29,17 @@
     <section class="header">
       <!-- navigation start -->
       <nav>
-        <a href="/home.html"><img src="img/logo.png" alt="Expert AD" /></a>
+        <a href="home.html"><img src="img/logo.png" alt="Expert AD" /></a>
         <div class="nav-links" id="navLinks">
-          <i class="fas fa-times" id="hide" onclick="menu()"></i>
+          <i class="fas fa-times" onclick="menu()"></i>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fas fa-bars" id="show" onclick="menu()"></i>
+        <i class="fas fa-bars" onclick="menu()"></i>
       </nav>
       <!-- navigation end -->
 
@@ -171,7 +171,7 @@
         If You Are A Hacker Or Designer Dont Use This Option to contact me as it
         may not reach me directly
       </p>
-      <a href="" class="hero-btn">Contact Me</a>
+      <a href="contact.html" class="hero-btn">Contact Me</a>
     </section>
 
     <!-- footer -->
@@ -188,6 +188,11 @@
       <p>2021 <i class="fa fa-copyright"></i> by expertad630</p>
     </section>
 
+
+
+
+
+
     <!-- all the inner scripting  -->
 
     <!-- javascript for menu -->
@@ -200,30 +205,8 @@
           x.style.display = "none";
         }
       }
-
-      // var navLinks = document.getElementById("navLinks");
-
-      // function showmenu() {
-      //     navLinks.style.display = "block";
-      // }
-
-      // function hidemenu() {
-      //     navLinks.style.display = "none";
-      // }
     </script>
-    <!-- javascript fr menu alternative -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-          $("#hide").click(function(){
-            $("#navLinks").hide();
-          });
-          $("#show").click(function(){
-            $("#navLinks").show();
-          });
-        });
-        </script> -->
-
+    
     <!-- Instafeed -->
     <script src="js/instafeed.min.js"></script>
     <script type="text/javascript">
