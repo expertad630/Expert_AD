@@ -52,39 +52,6 @@
 
     <!-- blogs -->
 
-
-    <!-- blogpost -->
-    <section class="blogPost">
-      <h1>Blog Post</h1>
-      <p>All the blogposts are avalable in Blog Section</p>
-      <div class="row">
-        <div class="blog-col">
-          <h3>Hacking</h3>
-          <p>
-            Hello my fellow Hackers, Welcome to Expert AD. In this section of
-            blogs you will find all the hackng related blogs I've posted.
-          </p>
-        </div>
-        <div class="blog-col">
-          <h3>Networking</h3>
-          <p>
-            Hello my fellow Hackers, Welcome to Expert AD. In this section of
-            blogs you will find all the Networking related blogs I think you
-            will require.
-          </p>
-        </div>
-        <div class="blog-col">
-          <h3>Bug-Bounty & CTF</h3>
-          <p>
-            Hello my fellow Hackers, Welcome to Expert AD. In this section of
-            blogs you will find all the Bug-Bounty and CTF related blogs I've
-            posted.
-          </p>
-        </div>
-      </div>
-      <a href="" class="insta-btn">Read Blogs</a>
-    </section>
-    <!-- blogpost -->
     <!-- blogposts -->
     <section class="blog-content">
       <div class="row">
@@ -97,10 +64,10 @@
           <p>Once you have completed the steps above, you have finished the initial setup of Burp Suite. What you do next is up to you, but we recommend taking a look through the following documentation to familiarize yourself with Burp and its main tools: </p>
           <div class="comments">
             <h3>Leave a Comment</h3>
-            <form action="" class="comment-form">
-              <input type="text" placeholder="Enter Name">
-              <input type="email" placeholder="Enter Email">
-              <textarea name="" id="" rows="5" placeholder="Your Comment"></textarea>
+            <form action="form-handler.php" method="POST" class="comment-form">
+              <input name="name" type="text" placeholder="Enter Name">
+              <input name="email" type="email" placeholder="Enter Email">
+              <textarea name="message" id="" rows="5" placeholder="Your Comment"></textarea>
               <button type="submit" class="insta-btn">Post Comment</button>
             </form>
           </div>
@@ -113,10 +80,10 @@
           <p>Once you have completed the steps above, you have finished the initial setup of Burp Suite. What you do next is up to you, but we recommend taking a look through the following documentation to familiarize yourself with Burp and its main tools:</p>
           <div class="comments">
             <h3>Leave a Comment</h3>
-            <form action="" class="comment-form">
-              <input type="text" placeholder="Enter Name">
-              <input type="email" placeholder="Enter Email">
-              <textarea name="" id="" rows="5" placeholder="Your Comment"></textarea>
+            <form action="form-handler.php" method="POST" class="comment-form">
+              <input name="name" type="text" placeholder="Enter Name">
+              <input name="email" type="email" placeholder="Enter Email">
+              <textarea name="message" id="" rows="5" placeholder="Your Comment"></textarea>
               <button type="submit" class="insta-btn">Post Comment</button>
             </form>
           </div>
@@ -161,11 +128,11 @@
       <h4>Follow Me</h4>
       <p>You can follow me on my social media</p>
       <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-github"></i>
-        <i class="fa fa-youtube"></i>
+        <a href="https://www.facebook.com/expertad630"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/expertad630"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/expertad630"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/expertad630"><i class="fa fa-github"></i></a>
+        <a href="https://bit.ly/ExpertAD"><i class="fa fa-youtube"></i></a>
       </div>
       <p>2021 <i class="fa fa-copyright"></i> by expertad630</p>
     </section>
@@ -181,16 +148,6 @@
       function hidemenu(){
         navLinks.style.right="-200px";
       }
-      
-      
-      // function menu() {
-      //   var x = document.getElementById("navLinks");
-      //   if (x.style.display === "none") {
-      //     x.style.display = "block";
-      //   } else {
-      //     x.style.display = "none";
-      //   }
-      // }
     </script>
 
   </body>
