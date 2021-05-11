@@ -29,18 +29,18 @@
     <section class="header">
       <!-- navigation start -->
       <nav>
-        <a href="home.html"><img src="img/logo.png" alt="Expert AD" /></a>
+        <a href="index.html"><img src="img/logo.png" alt="Expert AD" /></a>
         <h1>Expert AD</h1>
         <div class="nav-links" id="navLinks">
-          <i class="fas fa-times" onclick="menu()"></i>
+          <i class="fas fa-times" onclick="hidemenu()"></i>
           <ul>
-            <li><a href="home.html">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="blog.html">BLOG</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fas fa-bars" onclick="menu()"></i>
+        <i class="fas fa-bars" onclick="showmenu()"></i>
       </nav>
       <!-- navigation end -->
 
@@ -193,14 +193,24 @@
 
     <!-- javascript for menu -->
     <script>
-      function menu() {
-        var x = document.getElementById("navLinks");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
+
+      var navLinks= document.getElementById("navLinks");
+      function showmenu(){
+        navLinks.style.right="0";
       }
+      function hidemenu(){
+        navLinks.style.right="-200px";
+      }
+
+
+      // function menu() {
+      //   // var x = document.getElementById("navLinks");
+      //   // if (x.style.display === "none") {
+      //   //   x.style.display = "block";
+      //   // } else {
+      //   //   x.style.display = "none";
+      //   // }
+      // }
     </script>
     
     <!-- Instafeed -->
