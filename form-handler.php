@@ -1,4 +1,15 @@
 <?php
+$server="sql106.epizy.com";
+$username="epiz_28598031";
+$password="jLX8jJ7mCVcThOf";
+$dbname="epiz_28598031_expertad630";
+$conn= mysqli_connect($server, $username, $password, $dbname);
+if(!$conn){
+    die("Connecction Failled:".mysqli_connect_errno());
+}
+
+
+
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
